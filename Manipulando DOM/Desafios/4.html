@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Desafios</title>
+</head>
+
+
+
+<body>
+    <div>
+        <!-- Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+        Ao clicar no botão, a função adicionar() deve ser disparada adicionando um novo item a lista de
+        nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos
+        demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique. -->
+    </div>
+
+    <ul></ul>
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        var ul = document.querySelector('ul');
+
+        for (var i = 0; i < nomes.length; i++) {
+            var li = document.createElement('li');
+            var textElement = document.createTextNode(nomes[i]);
+            li.appendChild(textElement);
+            ul.appendChild(li);
+        }
+
+        function adicionar() {
+            var getName = document.querySelector('input').value;
+            var li = document.createElement('li');
+            var textElement = document.createTextNode(getName);
+
+            if (getName !== "") {
+                li.appendChild(textElement);
+                ul.appendChild(li);
+                var getName = document.querySelector('input').value = '';
+            }
+
+        }
+    </script>
+</body>
+
+</html>

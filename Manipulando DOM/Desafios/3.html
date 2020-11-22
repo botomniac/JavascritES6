@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Desafios</title>
+</head>
+
+
+
+<body>
+    <div>
+        A partir do seguinte vetor:
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
+            ● Diego
+            ● Gabriel
+            ● Lucas
+    </div>
+    
+    <ul></ul>
+
+    <script>
+       var nomes = ["Diego", "Gabriel", "Lucas"];
+       var ul = document.querySelector('ul');
+
+        for(var i = 0; i < nomes.length; i++){
+            var li = document.createElement('li');
+            var textElement = document.createTextNode(nomes[i]);
+            li.appendChild(textElement);
+            ul.appendChild(li);
+        }
+
+    </script>
+</body>
+
+</html>

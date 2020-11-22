@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- <input type="text" name="nome"/>
+        <button class="botao">ADD</button> -->
+
+        <input type="text" id="nome">
+    </div>
+
+
+    <script>
+
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://www.mrwsite.com.br');
+        linkElement.setAttribute('target', '_blank');
+
+        var textElement = document.createTextNode('Acesss Now!');
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+        var inputElement = document.querySelector("#nome");
+        containerElement.removeChild(inputElement);
+      
+    </script>
+</body>
+
+</html>

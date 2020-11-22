@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Desafios</title>
+    </head>
+
+  
+
+    <body>
+        <div>
+            Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+            vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+            aparecer na tela.
+        </div>
+        <button id="add" onclick="adicionaQuadrados()">Add quads</button>
+
+        <div id="container"></div>
+
+        <script>
+
+            function adicionaQuadrados (){
+                var quad = document.createElement('div');
+                quad.style.width = 100;
+                quad.style.height = 100;
+                quad.style.backgroundColor = 'red';
+
+                var container = document.querySelector("#container");
+                container.appendChild(quad);
+            }
+        </script>
+    </body>
+</html>

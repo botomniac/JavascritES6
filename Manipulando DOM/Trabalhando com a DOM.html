@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <input type="text" name="nome"/>
+        <button class="botao">ADD</button>
+    </div>
+
+
+    <script>
+    //   var inputElement = document.getElementById('name');
+    //   var inputElement = document.getElementsByTagName('input');
+    //   var inputElement = document.getElementsByClassName('botao');
+
+    // var inputElement = document.querySelector('div#app input')
+    // var inputElement = document.querySelector('input[name=name');
+    // var inputElement = document.querySelectorAll('input');
+
+    var inputElement = document.querySelector('input[name=nome]');
+    var btnElement = document.querySelector('button.botao');
+
+    btnElement.onclick = function () {
+        var text = inputElement.value;
+
+        alert(text);
+    }
+      
+      
+    </script>
+</body>
+
+</html>
