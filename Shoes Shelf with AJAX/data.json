@@ -1,0 +1,32 @@
+{
+    "products": [{
+            "image_src": ["nike.png"],
+            "brand": "Nike",
+            "name": "Air Max 98 Concept",
+            "colors": [
+                "white"
+            ],
+            "estoque": "5"
+        },
+        {
+            "image_src": ["adidas-vermelho.png", "adidas-preto.png"],
+            "brand": "Adidas",
+            "name": "Strapasson NX 9",
+            "colors": [
+                "red",
+                "gray"
+            ],
+            "estoque": "1"
+        },
+        {
+            "image_src": ["ferrari-vermelho.png" ,"ferrari-preto.png"],
+            "brand": "Puma",
+            "name": "Ferrari New",
+            "colors": [
+                "red",
+                "gray"
+            ],
+            "estoque": "10"
+        }
+    ]
+}
