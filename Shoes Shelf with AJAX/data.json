@@ -1,12 +1,14 @@
 {
-    "products": [{
+    "products": [
+        {
             "image_src": ["nike.png"],
             "brand": "Nike",
             "name": "Air Max 98 Concept",
             "colors": [
                 "white"
             ],
-            "estoque": "5"
+            "stock": "5",
+            "price": "350"
         },
         {
             "image_src": ["adidas-vermelho.png", "adidas-preto.png"],
@@ -16,7 +18,8 @@
                 "red",
                 "gray"
             ],
-            "estoque": "1"
+            "stock": "1",
+            "price": "250"
         },
         {
             "image_src": ["ferrari-vermelho.png" ,"ferrari-preto.png"],
@@ -26,7 +29,19 @@
                 "red",
                 "gray"
             ],
-            "estoque": "10"
+            "stock": "10",
+            "price": "299"
+        },
+        {
+            "image_src": ["ferrari-vermelho.png" ,"ferrari-preto.png"],
+            "brand": "Puma",
+            "name": "Ferrari New",
+            "colors": [
+                "red",
+                "gray"
+            ],
+            "stock": "10",
+            "price": "299"
         }
     ]
 }
